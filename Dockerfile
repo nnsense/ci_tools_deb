@@ -7,10 +7,11 @@ LABEL maintainer="nnsense"
 ARG TERRAFORM_VERSION
 RUN apt-get update && \
 apt-get install --no-install-recommends -y && \
-curl=7.64.0-4+deb10u1 \
-ca-certificates=20190110 \
-unzip=6.0-23+deb10u1 \
-gnupg=2.2.12-1+deb10u1 && \
+git=1:2.11.0-3+deb9u7 \
+curl=7.52.1-5+deb9u13 \
+ca-certificates=20200601~deb9u1 \
+unzip=6.0-21+deb9u2 \
+gnupg=2.1.18-8~deb9u4 && \
 yum clean all && rm -rf /var/cache/yum
 
 # Install helm
