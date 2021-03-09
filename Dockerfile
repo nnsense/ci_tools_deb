@@ -12,7 +12,7 @@ curl=7.52.1-5+deb9u13 \
 ca-certificates=20200601~deb9u1 \
 unzip=6.0-21+deb9u2 \
 gnupg=2.1.18-8~deb9u4 && \
-yum clean all && rm -rf /var/cache/yum
+apt-get clean && rm -rf /var/cache/apt/archives
 
 # Install helm
 RUN curl "https://get.helm.sh/helm-v3.5.2-linux-amd64.tar.gz" -o helm.tar.gz && tar -zxvf helm.tar.gz
