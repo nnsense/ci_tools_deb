@@ -6,7 +6,7 @@ FROM debian:${DEBIAN_VERSION}
 LABEL maintainer="nnsense"
 ARG TERRAFORM_VERSION
 RUN apt-get update && \
-apt-get install --no-install-recommends -y && \
+apt-get install --no-install-recommends -y \
 git=1:2.11.0-3+deb9u7 \
 curl=7.52.1-5+deb9u13 \
 ca-certificates=20200601~deb9u1 \
