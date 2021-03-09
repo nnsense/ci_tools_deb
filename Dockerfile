@@ -1,6 +1,6 @@
 # Set tools versions
 ARG TERRAFORM_VERSION="0.13.6"
-ARG DEBIAN_VERSION=buster-20201012-slim
+ARG DEBIAN_VERSION=stretch-slim
 
 FROM debian:${DEBIAN_VERSION}
 LABEL maintainer="nnsense"
